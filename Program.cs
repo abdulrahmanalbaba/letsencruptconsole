@@ -17,12 +17,12 @@ class Program
         Certificate certificate = serviceProvider.GetService<Certificate>();
          string [] subjectAlternativeNames = new[]
             {
-                "*.apnea.center",
-                "apnea.center"
+                "your-alternative-subject-name",
+                "your-alternative-subject-name"
             };
 
 
-        var result =  certificate.Generate("abdurrahman.albaba@gmail.com","*.apnea.center",subjectAlternativeNames,String.Empty,"p@ssw0rd1!",String.Empty,String.Empty,String.Empty,String.Empty,String.Empty).Result;
+        var result =  certificate.Generate("your-email-address","your-domain",subjectAlternativeNames,String.Empty,"p@ssw0rd1!",String.Empty,String.Empty,String.Empty,String.Empty,String.Empty).Result;
         return;
     }
 }
